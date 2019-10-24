@@ -1,0 +1,56 @@
+body{
+    background-color:white;
+}
+
+#outerC{
+    padding:5rem;
+}
+
+#innerC{
+    padding:3rem;
+    margin-top:3rem;
+    background-color:rgb(245, 245, 245);
+    box-shadow:  0rem 0rem 10px grey;
+}
+
+#pageHeading{
+    text-align: center;
+    color:grey;
+}
+
+.borderedBR{
+    border-bottom: lightgray solid .15rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom:1rem;
+}
+
+
+.form-control{
+    height:9rem;
+    border: dashed grey;
+}
+
+.form-control[readonly]{
+    background-color: white;
+}
+
+.col-6{
+    padding:0;
+}
+.col-12{
+    padding:0;
+}
+
+button{
+    position:relative;
+    width: 70%;
+    left: 15%;
+    right:15%;
+    
+}
+
+.btn{
+    border-radius: 25px;
+    font-size: 1.25rem;
+}

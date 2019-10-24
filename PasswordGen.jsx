@@ -13,6 +13,14 @@ var specialOpt;
 var numbersOpt;
 var upperOpt;
 var lowerOpt;
+var runAgain; // Not likely to be used
+
+
+
+
+
+
+
 
 
 
@@ -64,5 +72,46 @@ function convertToBool(x){
     return null;
   }
 }
+
+function optionsPW(){
+  alert("Please select options for password(s) to include");
+  upperOpt = convertToBool(prompt('Upper Case Letters? "y" for Yes, "n" for No'));
+  if (upperOpt == null) { 
+    alert("An invalid response was given, please try again.");
+    return false;
+  }
+  lowerOpt = convertToBool(prompt('Lower Case Letters? "y" for Yes, "n" for No'));
+  if (lowerOpt == null) { 
+    alert("An invalid response was given, please try again.");
+    return false;
+  }
+  numbersOpt = convertToBool(prompt('Numbers? "y" for Yes, "n" for No'));
+  if (numbersOpt == null) { 
+    alert("An invalid response was given, please try again.");
+    return false;
+  }
+  specialOpt = convertToBool(prompt('Special Characters? "y" for Yes, "n" for No'));
+  if (specialOpt == null) { 
+    alert("An invalid response was given, please try again.");
+    return false;
+  }
+  return true;
+}
+
+
+
+
+
+function generatePW(){
+
+  do{
+    runAgain = optionsPW();
+  }while (runagain == false);
+
+
+
+
+}
+
 
 /// need to create series of if statements to determine options in password creation, example: special y/n, numbers y/n
