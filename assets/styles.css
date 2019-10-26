@@ -12,6 +12,18 @@ body{
     background-color:rgb(245, 245, 245);
     box-shadow:  0rem 0rem 10px grey;
 }
+@media screen and (max-width: 767px) {
+    #outerC{
+        padding-left:0;
+        padding-right:0;
+    }
+    #contentH{
+        text-align: center;
+
+    }
+   
+
+}    
 
 #pageHeading{
     text-align: center;
@@ -32,8 +44,11 @@ body{
 }
 
 .form-control[readonly]{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
 }
+
+
 
 .col-6{
     padding:0;
